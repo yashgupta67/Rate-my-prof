@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://drive.google.com/uc?id=YOUR_IMAGE_ID'); /* Replace with your Google Drive image ID */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+        }
+        form input[type="text"], form select {
+            width: 100%;
+            max-width: 500px;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        form input[type="text"]:focus, form select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+            outline: none;
+        }
+        form button {
+            padding: 14px 28px;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        form button:hover {
+            background: linear-gradient(45deg, #0056b3, #003d80);
+            transform: scale(1.05);
+        }
+        form button:active {
+            background: linear-gradient(45deg, #003d80, #002a5d);
+        }
+        .suggestions {
+            width: 100%;
+            max-width: 500px;
+        }
+        .suggestions option {
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Discover Your Ideal Professor</h1>
+        <p>Search for professors based on expertise, teaching style, or ratings with ease.</p>
+    </div>
+
+    <div class="container">
+        <form action="{{ url_for('search') }}" method="post">
+            <label for="query">Enter your criteria:</label>
+            <input type="text" id="query" name="query" placeholder="E.g., practical teaching, robotics, high rating" required>
+
+            <label for="suggestions">Or choose a suggestion:</label>
+            <select id="suggestions" name="suggestions" class="suggestions" onchange="updateQuery()">
+                <option value="">-- Select a suggestion --</option>
+                <option value="good at practical teaching">Find a professor who is good at practical teaching</option>
+                <option value="expert in artificial intelligence">Find a professor who is an expert in artificial intelligence</option>
+                <option value="highest rating">Find the professor with the highest rating</option>
+                <option value="great at interactive classes">Find a professor who excels in interactive classes</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <script>
+        function updateQuery() {
+            var select = document.getElementById('suggestions');
+            var input = document.getElementById('query');
+            input.value = select.value;
+            if (select.value) {
+                document.querySelector('form').submit();
+            }
+        }
+    </script>
+</body>
+</html>

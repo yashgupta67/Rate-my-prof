@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            background-color: #007bff;
+            margin: 0;
+            font-size: 2.5em;
+            border-bottom: 4px solid #0056b3;
+        }
+        .results {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .results p {
+            font-size: 18px;
+            color: #333;
+            margin: 15px 0;
+        }
+        .professor-profile {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .professor-profile p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .professor-profile p strong {
+            color: #007bff;
+        }
+        .alternative-professors {
+            margin-top: 30px;
+        }
+        .alternative-professors h3 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .alternative-professors ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .alternative-professors li {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .alternative-professors li p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .back-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div class="results">
+        <p><strong>Based on your criteria, I recommend:</strong></p>
+        {% if message %}
+            <div class="professor-profile">
+                {{ message|safe }}
+            </div>
+        {% else %}
+            <p>No relevant results found based on your criteria.</p>
+        {% endif %}
+
+        <!-- Example of additional suggestions if needed -->
+        {% if alternatives %}
+            <div class="alternative-professors">
+                <h3>Alternatively, you might consider:</h3>
+                <ul>
+                    {% for professor in alternatives %}
+                        <li>
+                            <p><strong>Name:</strong> {{ professor.name }}</p>
+                            <p><strong>Subject:</strong> {{ professor.subject }}</p>
+                            <p><strong>Rating:</strong> {{ professor.rating }}</p>
+                            <p><strong>Speciality:</strong> {{ professor.speciality }}</p>
+                            <p><strong>Teaching Style:</strong> {{ professor.teaching_style }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+    <a href="{{ url_for('index') }}" class="back-link">Back to Search</a>
+</body>
+</html>

@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Dr. John Smith",
+        "subject": "Computer Science",
+        "rating": 4.5,
+        "speciality": "Expert in algorithms and data structures. Known for engaging lectures and practical assignments."
+    },
+    {
+        "name": "Prof. Emily Johnson",
+        "subject": "Mathematics",
+        "rating": 4.7,
+        "speciality": "Specializes in calculus and linear algebra. Uses real-world problems to illustrate concepts."
+    },
+    {
+        "name": "Dr. Michael Brown",
+        "subject": "Physics",
+        "rating": 4.3,
+        "speciality": "Focuses on quantum mechanics and electromagnetism. Provides extensive problem sets for practice."
+    },
+    {
+        "name": "Prof. Jessica Davis",
+        "subject": "Biology",
+        "rating": 4.8,
+        "speciality": "Expert in genetics and molecular biology. Incorporates hands-on lab work in her classes."
+    },
+    {
+        "name": "Dr. William Martinez",
+        "subject": "Chemistry",
+        "rating": 4.4,
+        "speciality": "Specializes in organic chemistry. Known for interactive lectures and detailed explanations."
+    },
+    {
+        "name": "Prof. Sarah Wilson",
+        "subject": "History",
+        "rating": 4.6,
+        "speciality": "Focuses on modern history and historiography. Uses multimedia resources to enhance learning."
+    },
+    {
+        "name": "Dr. James Anderson",
+        "subject": "Economics",
+        "rating": 4.2,
+        "speciality": "Expert in macroeconomics and econometrics. Emphasizes data analysis in lectures."
+    },
+    {
+        "name": "Prof. Linda Thomas",
+        "subject": "Engineering",
+        "rating": 4.9,
+        "speciality": "Specializes in mechanical engineering and robotics. Known for project-based learning."
+    },
+    {
+        "name": "Dr. Robert Taylor",
+        "subject": "Philosophy",
+        "rating": 4.1,
+        "speciality": "Focuses on ethics and logic. Encourages critical thinking and debate in classes."
+    },
+    {
+        "name": "Prof. Patricia Lee",
+        "subject": "Literature",
+        "rating": 4.5,
+        "speciality": "Expert in contemporary literature and literary theory. Uses diverse reading materials in her courses."
+    },
+    {
+        "name": "Dr. Charles White",
+        "subject": "Political Science",
+        "rating": 4.7,
+        "speciality": "Specializes in international relations and political theory. Incorporates current events into discussions."
+    },
+    {
+        "name": "Prof. Barbara Harris",
+        "subject": "Sociology",
+        "rating": 4.3,
+        "speciality": "Focuses on social theories and research methods. Encourages group projects and fieldwork."
+    },
+    {
+        "name": "Dr. David Clark",
+        "subject": "Statistics",
+        "rating": 4.6,
+        "speciality": "Expert in probability and statistical inference. Provides practical exercises and data analysis labs."
+    },
+    {
+        "name": "Prof. Karen Lewis",
+        "subject": "Geology",
+        "rating": 4.4,
+        "speciality": "Specializes in earth processes and mineralogy. Uses field trips to complement classroom learning."
+    },
+    {
+        "name": "Dr. Richard Walker",
+        "subject": "Astronomy",
+        "rating": 4.8,
+        "speciality": "Focuses on astrophysics and observational astronomy. Includes stargazing sessions and practical experiments."
+    },
+    {
+        "name": "Prof. Nancy Hall",
+        "subject": "Art History",
+        "rating": 4.2,
+        "speciality": "Expert in Renaissance art and art criticism. Uses visual aids and gallery visits for teaching."
+    },
+    {
+        "name": "Dr. Joseph Allen",
+        "subject": "Environmental Science",
+        "rating": 4.6,
+        "speciality": "Specializes in ecological systems and sustainability. Known for field-based research and projects."
+    },
+    {
+        "name": "Prof. Lisa Young",
+        "subject": "Music",
+        "rating": 4.5,
+        "speciality": "Focuses on music theory and composition. Includes hands-on music creation and performance."
+    },
+    {
+        "name": "Dr. Daniel Scott",
+        "subject": "Anthropology",
+        "rating": 4.3,
+        "speciality": "Expert in cultural anthropology and ethnography. Uses fieldwork and ethnographic studies in teaching."
+    },
+    {
+        "name": "Prof. Maria King",
+        "subject": "Languages",
+        "rating": 4.7,
+        "speciality": "Specializes in linguistics and second language acquisition. Encourages immersive language practice."
+    },
+    {
+        "name": "Dr. Christopher Wright",
+        "subject": "Computer Engineering",
+        "rating": 4.4,
+        "speciality": "Focuses on embedded systems and VLSI design. Uses hands-on projects and simulations in classes."
+    },
+    {
+        "name": "Prof. Susan Lopez",
+        "subject": "Theater",
+        "rating": 4.6,
+        "speciality": "Expert in drama and performance studies. Encourages live performances and improvisational exercises."
+    },
+    {
+        "name": "Dr. Steven Adams",
+        "subject": "Ethics",
+        "rating": 4.2,
+        "speciality": "Specializes in moral philosophy and applied ethics. Promotes philosophical debates and ethical discussions."
+    },
+    {
+        "name": "Prof. Angela Baker",
+        "subject": "Public Health",
+        "rating": 4.5,
+        "speciality": "Focuses on epidemiology and health policy. Uses case studies and public health simulations."
+    },
+    {
+        "name": "Dr. Edward Nelson",
+        "subject": "Finance",
+        "rating": 4.7,
+        "speciality": "Expert in corporate finance and investment strategies. Incorporates real-world financial scenarios into teaching."
+    },
+    {
+        "name": "Prof. Elizabeth Carter",
+        "subject": "Urban Studies",
+        "rating": 4.4,
+        "speciality": "Specializes in urban planning and development. Uses case studies and city planning simulations."
+    },
+    {
+        "name": "Dr. Brian Mitchell",
+        "subject": "Health Sciences",
+        "rating": 5.0,
+        "speciality": "Focuses on clinical research and health diagnostics. Known for interactive labs and simulations."
+    },
+    {
+        "name": "Prof. Margaret Roberts",
+        "subject": "Geography",
+        "rating": 4.3,
+        "speciality": "Expert in physical geography and spatial analysis. Uses mapping tools and field studies in teaching."
+    },
+    {
+        "name": "Dr. Kevin Stewart",
+        "subject": "Engineering Management",
+        "rating": 4.6,
+        "speciality": "Specializes in project management and systems engineering. Emphasizes real-world project management skills."
+    },
+    {
+        "name": "Prof. Jessica Martin",
+        "subject": "Journalism",
+        "rating": 4.5,
+        "speciality": "Focuses on media ethics and investigative journalism. Includes hands-on reporting and editing exercises."
+    },
+    {
+        "name": "Dr. Anthony Turner",
+        "subject": "Robotics",
+        "rating": 4.7,
+        "speciality": "Expert in autonomous systems and robotic programming. Uses practical robotics labs and simulations."
+    },
+    {
+        "name": "Prof. Karen Young",
+        "subject": "Sociology",
+        "rating": 4.4,
+        "speciality": "Focuses on social networks and community studies. Encourages fieldwork and social research projects."
+    },
+    {
+        "name": "Dr. Thomas Green",
+        "subject": "Cybersecurity",
+        "rating": 5.0,
+        "speciality": "Specializes in network security and cryptography. Provides hands-on labs and cybersecurity simulations."
+    }
+]
