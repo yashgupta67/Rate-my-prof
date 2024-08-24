@@ -26,3 +26,5 @@ Welcome to the **Professor Search App**! This application is designed to help st
 Check out the functioning of the app 
 
 https://youtu.be/5s4PZ1117Vg
+
+https://youtu.be/s_nlVExP6Vg
